@@ -206,6 +206,13 @@
         "type": "DIRECTORIES",
         "pattern": "CS50",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "incomplete-tasks.md",
+        "patternType": "STRICT"
       }
     ]
   },
