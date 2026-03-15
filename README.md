@@ -30,10 +30,11 @@ Build practical software engineering skills in a structured sequence — from CS
 ```
 software-engineering/
 ├── README.md
-├── learning-roadmap-topics.md   # Core topics in learning sequence
-├── notes/                       # Stage-by-stage learning notes
+├── progress/                         # Obsidian-first dashboard, trackers, reviews, and roadmaps
+│   └── roadmaps/                     # Long-form roadmap notes and content-consumption logs
+├── Templates/                        # Obsidian note templates
 ├── CS50/                        # CS50 coursework and exercises
-└── projects/                    # Practice and experimental projects
+└── skills/                      # Guided learning skills and outputs
 ```
 
 ## Learning Roadmap
@@ -51,7 +52,15 @@ Structured in stages — from fundamentals toward agentic engineering.
 | 5     | Containerization — Docker, Docker Compose, isolated environments | 🟡 Next   |
 | 6     | Agentic engineering — multi-agent orchestration, AI-assisted dev | 🟡 Next   |
 
-Full roadmap with resources: [`learning-roadmap-topics.md`](./learning-roadmap-topics.md)
+Full roadmap with resources: [`progress/roadmaps/2026-topics.md`](./progress/roadmaps/2026-topics.md)
+
+## Learning System
+
+- Progress dashboard: [progress/README.md](./progress/README.md)
+- Current focus: [progress/current-focus.md](./progress/current-focus.md)
+- Skill tracker: [progress/skill-tracker.md](./progress/skill-tracker.md)
+- Weekly review: [progress/weekly-review.md](./progress/weekly-review.md)
+- Content consumed: [progress/roadmaps/2026-consumption.md](./progress/roadmaps/2026-consumption.md)
 
 ## How This Repo Is Used
 

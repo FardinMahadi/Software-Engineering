@@ -1,7 +1,20 @@
+---
+type: roadmap
+status: active
+area: planning
+created: 2026-03-15
+updated: 2026-03-15
+tags:
+  - learning
+  - roadmap
+  - planning
+---
+
 # Fardin's 2026 Software Engineering Roadmap
 
+Parent: [[progress/README|Learning Progress Dashboard]]
+
 > **Source:** [How To Learn To Code In 2026](https://www.youtube.com/watch?v=oshQg1uSRvg) — Tina (ex-Meta data scientist, 10 years coding)
-> **Glasp:** https://glasp.co/reader?url=https://www.youtube.com/watch?v=oshQg1uSRvg
 
 ---
 
@@ -33,6 +46,18 @@ Your job as an agentic engineer:
 | 4     | Security & privacy        | 🟣 Active | **High**     |
 | 5     | Docker & containerization | 🟡 Next   | Medium       |
 | 6     | Agentic engineering       | 🟡 Next   | Medium       |
+
+---
+
+## Learning system
+
+This roadmap is the curriculum, not the day-to-day tracker.
+
+- Use [[progress/README|Learning Progress Dashboard]] for active status.
+- Use [[progress/current-focus|Current Focus]] for this week's study targets.
+- Use [[progress/skill-tracker|Skill Tracker]] to record progress by skill.
+- Use [[progress/roadmaps/2026-consumption|2026 Content Consumption]] to track what you watched, read, or finished from this roadmap.
+- Keep new operational notes Obsidian-friendly with YAML frontmatter, wikilinks, properties, and Tasks-plugin-compatible checkboxes.
 
 ---
 

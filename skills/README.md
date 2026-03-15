@@ -6,6 +6,17 @@ Interactive learning exercises modeled after [GitHub Skills](https://skills.gith
 
 ---
 
+## What this file is
+
+This `README.md` is the index for everything under `skills/`.
+
+- Use this file to browse the skill library.
+- Use each skill folder's `README.md` for the actual course flow.
+
+If a learning workflow needs long-form explanation, templates, or step-by-step activities, keep that material inside `skills/`.
+
+---
+
 ## Folder structure
 
 ```
@@ -68,21 +79,30 @@ skills/
 │       ├── review-framework.md
 │       └── recovery-playbook.md
 │
-└── 06-testing-fundamentals/
-    ├── README.md                      ← 5-step course (pyramid → unit → integration → E2E → AI test review)
-    └── testing/                       ← all test files and notes
-        ├── testing-pyramid.md
-        ├── unit/
-        │   ├── score.ts
-        │   ├── score.test.ts
-        │   └── NOTES.md
-        ├── integration/
-        │   ├── quiz.test.ts
-        │   └── NOTES.md
-        ├── e2e/
-        │   ├── student-quiz.spec.ts
-        │   └── NOTES.md
-        └── ai-test-review.md
+├── 06-testing-fundamentals/
+│   ├── README.md                      ← 5-step course (pyramid → unit → integration → E2E → AI test review)
+│   └── testing/                       ← all test files and notes
+│       ├── testing-pyramid.md
+│       ├── unit/
+│       │   ├── score.ts
+│       │   ├── score.test.ts
+│       │   └── NOTES.md
+│       ├── integration/
+│       │   ├── quiz.test.ts
+│       │   └── NOTES.md
+│       ├── e2e/
+│       │   ├── student-quiz.spec.ts
+│       │   └── NOTES.md
+│       └── ai-test-review.md
+│
+└── 07-learning-operations/
+    ├── README.md                      ← 5-step course (Obsidian workflow → progress model → reviews → AI guidance → retrospective)
+    └── learning/                      ← operating notes and system docs created during the skill
+        ├── obsidian-workflow.md
+        ├── progress-model.md
+        ├── review-rhythm.md
+        ├── ai-guidance.md
+        └── system-retrospective.md
 ```
 
 ### Naming conventions
@@ -117,6 +137,7 @@ There are no auto-graders. You review your own work. The point is to build the h
 | 04  | [Docker & Containerization](./04-docker-containerization/README.md) | Dockerfile, Compose, multi-stage builds, agent sandboxing                  | 4–5 hrs | ⬜ Not started |
 | 05  | [Agentic Engineering](./05-agentic-engineering/README.md)           | Agent-ready projects, prompt templates, multi-agent workflows, code review | 5–6 hrs | ⬜ Not started |
 | 06  | [Testing Fundamentals](./06-testing-fundamentals/README.md)         | Unit tests, API integration tests, Playwright E2E, AI test review          | 4–5 hrs | ⬜ Not started |
+| 07  | [Learning Operations](./07-learning-operations/README.md)           | Obsidian workflow, progress tracking, review cadence, AI guidance          | 3–4 hrs | 🟡 In progress |
 
 Update the status column as you progress: ⬜ Not started → 🟡 In progress → ✅ Done
 
@@ -130,4 +151,6 @@ Update the status column as you progress: ⬜ Not started → 🟡 In progress �
 
 Architecture and Testing first because everything else builds on understanding what you're building and how to verify it works. Security before Docker because Docker is partly a security tool. Agentic Engineering last because it requires all the others.
 
-**Total: ~24–31 hours** — about 6 weeks at a few hours per weekday, or 3–4 focused weekends.
+Run [07 Learning Operations](./07-learning-operations/README.md) in parallel with the other skills so progress tracking and AI guidance stay current while you study.
+
+**Total: ~27–35 hours** — about 6 to 8 weeks at a few hours per weekday, or 4 focused weekends with review time.
