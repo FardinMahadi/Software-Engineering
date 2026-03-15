@@ -281,7 +281,20 @@
     "instructions": 92,
     "tasks": 93,
     "roadmap": 94,
-    "consumption": 95
+    "consumption": 95,
+    "execution": 96,
+    "prosnokorta": 97,
+    "week-1": 98,
+    "requirements": 99,
+    "data-model": 100,
+    "adr": 101,
+    "scope": 102,
+    "backend": 103,
+    "node": 104,
+    "testing": 105,
+    "strategy": 106,
+    "security": 107,
+    "checklist": 108
   },
   "_version": 3
 }

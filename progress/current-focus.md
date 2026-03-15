@@ -27,21 +27,22 @@ Parent: [[progress/README|Learning Progress Dashboard]]
 
 ## This week
 
-- [ ] Complete `01-software-architecture` step 1 output.
-- [ ] Review the `02-git-github` workflow and define one branch naming standard.
-- [ ] Run one OWASP-focused audit against an active project.
+- [ ] Execute [[progress/execution/week-1-prosnokorta-slice/README|Week 1 Prosnokorta Execution Pack]].
+- [ ] Open PR: `docs/week1-requirements-data-model-openapi` in the app repo.
+- [ ] Open PR: `docs/week1-adrs-and-checklists` in the app repo.
+- [ ] Add CI workflow from `ci-workflow-skeleton.yml` and run first green pipeline.
 - [ ] Capture blockers and decisions in [[progress/weekly-review|Weekly Review]].
 
 ## Current blockers
 
-- No single operational dashboard existed before this system.
-- Progress status was split between overview docs and a placeholder task note.
+- Application source repo files are not in this workspace, so execution artifacts must be applied there.
+- Testing/security baselines are still at beginner level and need strict PR boundaries.
 
 ## Next actions
 
-1. Use [[skills/07-learning-operations/README|07 Learning Operations]] to make the workflow repeatable.
-2. Update [[progress/skill-tracker|Skill Tracker]] immediately after each finished step.
-3. Keep [[Incomplete tasks]] as a vault-wide task query, not the only tracker.
+1. Apply `openapi.yaml` and docs artifacts in Prosnokorta backend repository.
+2. Implement first two endpoints (`POST /quizzes`, `GET /quizzes`) with tests.
+3. Update [[progress/skill-tracker|Skill Tracker]] after first Week 1 PR merge.
 
 ## Notes for AI guidance
 

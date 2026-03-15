@@ -21,6 +21,7 @@ This note is the map of content for the learning system in this repository.
 - [[progress/weekly-review|Weekly Review]]
 - [[progress/learning-backlog|Learning Backlog]]
 - [[progress/roadmaps/2026-consumption|2026 Content Consumption]]
+- [[progress/execution/week-1-prosnokorta-slice/README|Week 1 Prosnokorta Execution Pack]]
 - [[Incomplete tasks|Incomplete Tasks]]
 - [[progress/roadmaps/2026-topics|2026 Learning Roadmap]]
 
@@ -36,7 +37,7 @@ Use this folder as the operational source of truth for learning progress.
 
 | Stage | Focus                       | Status | Next action                                             |
 | ----- | --------------------------- | ------ | ------------------------------------------------------- |
-| 2     | Software architecture       | active | Finish step 1 deliverables and start data model notes   |
+| 2     | Software architecture       | active | Execute Week 1 slice artifacts in the application repo  |
 | 3     | Git and GitHub workflows    | active | Lock in branch, PR, and recovery habits                 |
 | 4     | Security and privacy        | active | Run one project audit using a repeatable checklist      |
 | 5     | Docker and containerization | queued | Prepare after architecture and security notes stabilize |
