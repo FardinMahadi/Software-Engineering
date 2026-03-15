@@ -31,7 +31,7 @@ Parent: [[progress/README|Learning Progress Dashboard]]
 | [[skills/04-docker-containerization/README]] | not-started | 0%       | -            | Queue after architecture and security work                   |
 | [[skills/05-agentic-engineering/README]]     | not-started | 0%       | -            | Use after the review and tracking system is stable           |
 | [[skills/06-testing-fundamentals/README]]    | not-started | 0%       | -            | Move up once architecture step outputs exist                 |
-| [[skills/07-learning-operations/README]]     | in-progress | 30%      | 2026-03-15   | Finish vault structure and weekly review rhythm              |
+| [[skills/07-learning-operations/README]]     | done        | 100%     | 2026-03-15   | Apply retrospective improvement in next weekly review        |
 
 ## Update rule
 

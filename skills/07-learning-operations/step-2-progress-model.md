@@ -1,6 +1,6 @@
 ---
 type: skill-step
-status: active
+status: done
 skill: learning-operations
 step: 2
 created: 2026-03-15

@@ -129,17 +129,17 @@ There are no auto-graders. You review your own work. The point is to build the h
 
 ## The skills
 
-| #   | Skill                                                               | Focus                                                                      | Time    | Status         |
-| --- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------- | -------------- |
-| 01  | [Software Architecture](./01-software-architecture/README.md)       | Requirements → data model → API design → system diagram → self-review      | 4–6 hrs | ⬜ Not started |
-| 02  | [Git & GitHub Workflows](./02-git-github/README.md)                 | Branching strategy, conventional commits, rebase, PRs, recovery            | 3–4 hrs | ⬜ Not started |
-| 03  | [Security & Privacy](./03-security-privacy/README.md)               | OWASP Top 10, auth, RBAC, input validation, data protection                | 4–5 hrs | ⬜ Not started |
-| 04  | [Docker & Containerization](./04-docker-containerization/README.md) | Dockerfile, Compose, multi-stage builds, agent sandboxing                  | 4–5 hrs | ⬜ Not started |
-| 05  | [Agentic Engineering](./05-agentic-engineering/README.md)           | Agent-ready projects, prompt templates, multi-agent workflows, code review | 5–6 hrs | ⬜ Not started |
-| 06  | [Testing Fundamentals](./06-testing-fundamentals/README.md)         | Unit tests, API integration tests, Playwright E2E, AI test review          | 4–5 hrs | ⬜ Not started |
-| 07  | [Learning Operations](./07-learning-operations/README.md)           | Obsidian workflow, progress tracking, review cadence, AI guidance          | 3–4 hrs | 🟡 In progress |
+> Track status and progress in [`progress/skill-tracker.md`](../progress/skill-tracker.md)
 
-Update the status column as you progress: ⬜ Not started → 🟡 In progress → ✅ Done
+| #   | Skill                                                               | Focus                                                                      | Time    |
+| --- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------- |
+| 01  | [Software Architecture](./01-software-architecture/README.md)       | Requirements → data model → API design → system diagram → self-review      | 4–6 hrs |
+| 02  | [Git & GitHub Workflows](./02-git-github/README.md)                 | Branching strategy, conventional commits, rebase, PRs, recovery            | 3–4 hrs |
+| 03  | [Security & Privacy](./03-security-privacy/README.md)               | OWASP Top 10, auth, RBAC, input validation, data protection                | 4–5 hrs |
+| 04  | [Docker & Containerization](./04-docker-containerization/README.md) | Dockerfile, Compose, multi-stage builds, agent sandboxing                  | 4–5 hrs |
+| 05  | [Agentic Engineering](./05-agentic-engineering/README.md)           | Agent-ready projects, prompt templates, multi-agent workflows, code review | 5–6 hrs |
+| 06  | [Testing Fundamentals](./06-testing-fundamentals/README.md)         | Unit tests, API integration tests, Playwright E2E, AI test review          | 4–5 hrs |
+| 07  | [Learning Operations](./07-learning-operations/README.md)           | Obsidian workflow, progress tracking, review cadence, AI guidance          | 3–4 hrs |
 
 ---
 

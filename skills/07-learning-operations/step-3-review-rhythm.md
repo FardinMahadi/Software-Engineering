@@ -1,6 +1,6 @@
 ---
 type: skill-step
-status: active
+status: done
 skill: learning-operations
 step: 3
 created: 2026-03-15
@@ -26,3 +26,11 @@ Your note should define:
 5. How to decide whether a topic needs more depth or is good enough for now
 
 Use `progress/weekly-review.md` as the operational companion note and keep all examples Obsidian-friendly.
+
+## Acceptance criteria
+
+- [x] Daily update rhythm is clearly defined.
+- [x] Weekly update rhythm is clearly defined.
+- [x] Review questions are listed.
+- [x] Backlog-to-focus movement rule is documented.
+- [x] Depth decision rule (good enough vs deeper study) is documented.

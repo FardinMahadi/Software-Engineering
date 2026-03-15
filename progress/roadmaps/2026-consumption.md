@@ -31,6 +31,7 @@ Use this note to track what content you actually consumed for the roadmap: video
 
 | Date | Stage | Resource | Type | Status | Takeaway | Next action |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-03-15 | 1 | [CS50x - Introduction to Computer Science (Harvard, David Malan)](https://youtu.be/8mAITcNt710?list=PLimr0ElOVZG0twt7Vvnnz_edeVJrUD_G6) | video/course | in-progress | Strong fundamentals framing; keep pairing concepts with hands-on exercises. | Log each lecture completion with one practical artifact. |
 | 2026-03-15 | 2 | [How To Learn To Code In 2026](https://www.youtube.com/watch?v=oshQg1uSRvg) | video | done | Use fundamentals to supervise AI instead of delegating judgment. | Apply the roadmap to active projects. |
 | 2026-03-15 | 2 | [System Design Primer](https://github.com/donnemartin/system-design-primer) | repo/docs | queued | Use as the main reference when writing architecture notes. | Start with request flow and scalability basics. |
 | 2026-03-15 | 2 | [roadmap.sh/backend](https://roadmap.sh/backend) | roadmap | queued | Good supporting map for architecture and deployment decisions. | Use selectively alongside active project work. |

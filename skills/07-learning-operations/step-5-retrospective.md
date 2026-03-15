@@ -1,6 +1,6 @@
 ---
 type: skill-step
-status: active
+status: done
 skill: learning-operations
 step: 5
 created: 2026-03-15
@@ -26,3 +26,11 @@ Answer these questions:
 5. What should be simplified before scaling this system to more repos?
 
 Close the step by updating [[progress/skill-tracker|Skill Tracker]] and writing one improvement you will apply next week.
+
+## Acceptance criteria
+
+- [x] All 5 retrospective questions are answered in `learning/system-retrospective.md`.
+- [x] Useful vs noisy AI suggestions are identified.
+- [x] Keep/remove metadata decision is documented.
+- [x] One concrete improvement for next week is written.
+- [x] Skill tracker is updated to reflect completion.

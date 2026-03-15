@@ -1,6 +1,6 @@
 ---
 type: skill-step
-status: active
+status: done
 skill: learning-operations
 step: 4
 created: 2026-03-15
@@ -26,3 +26,11 @@ Cover these points:
 5. What the AI must never do without explicit approval
 
 Use `learning/ai-guidance.md` as the implementation note for this workflow and keep it aligned with the rest of the skill.
+
+## Acceptance criteria
+
+- [x] Required pre-read notes are listed.
+- [x] Progress update behavior after completion is documented.
+- [x] Preservation rules for Obsidian note structure are documented.
+- [x] Next-step recommendation behavior is documented.
+- [x] Explicit approval guardrails are documented.

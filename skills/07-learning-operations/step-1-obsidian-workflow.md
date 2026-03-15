@@ -1,6 +1,6 @@
 ---
 type: skill-step
-status: active
+status: done
 skill: learning-operations
 step: 1
 created: 2026-03-15
@@ -32,3 +32,11 @@ Also define:
 - Which note acts as the entry point for navigation
 
 Use `progress/README.md` as the reference MOC for the current implementation.
+
+## Acceptance criteria
+
+- [x] The note explicitly states markdown is Obsidian-first.
+- [x] All 5 operational rules are documented.
+- [x] Folder roles (overview vs operational) are clearly defined.
+- [x] Source-of-truth note is identified.
+- [x] Entry-point note for navigation is identified.
