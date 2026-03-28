@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBookUp2",
+      "LiBookText",
       "LiHourglass",
       "LiTimer",
-      "LiBookTemplate",
-      "LiChartBarIncreasing",
-      "LiTestTubeDiagonal"
+      "LiBookTemplate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -55,5 +55,6 @@
   "skills/06-testing-fundamentals": "LiTestTubeDiagonal",
   "progress": "LiChartBarIncreasing",
   "Templates": "LiBookTemplate",
-  "incomplete-tasks.md": "LiHourglass"
+  "incomplete-tasks.md": "LiHourglass",
+  "curriculum": "LiBookUp2"
 }

@@ -7,7 +7,7 @@ stage:
   - stage-3
   - stage-4
 created: 2026-03-15
-updated: 2026-03-15
+updated: 2026-03-16
 next_review: 2026-03-22
 tags:
   - learning
@@ -27,7 +27,11 @@ Parent: [[progress/README|Learning Progress Dashboard]]
 
 ## This week
 
-- [ ] Complete `01-software-architecture` step 1 output.
+- [x] Complete `01-software-architecture` step 1 output.
+- [x] Complete `01-software-architecture` step 2 output. (Data model design)
+- [x] Complete `01-software-architecture` step 3 output. (API specification)
+- [x] Complete `01-software-architecture` step 4 output. (System architecture & deployment)
+- [x] Complete `01-software-architecture` step 5 output. (Architecture review & self-critique)
 - [ ] Review the `02-git-github` workflow and define one branch naming standard.
 - [ ] Run one OWASP-focused audit against an active project.
 - [ ] Capture blockers and decisions in [[progress/weekly-review|Weekly Review]].

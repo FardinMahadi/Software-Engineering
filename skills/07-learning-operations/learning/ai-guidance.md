@@ -43,7 +43,7 @@ Do not update progress for partial drafts without evidence.
 - Wikilinks and link targets.
 - Tasks-plugin checkbox syntax.
 - Existing heading structure where possible.
-- Existing file locations in the `progress/` and `skills/` structure.
+- Existing file locations in the `progress/`, `skills/`, and `curriculum/` structure.
 
 ## Expected behavior
 
@@ -75,3 +75,4 @@ Use this decision order:
 3. Mark a step `done` without evidence in files.
 4. Change status models or frontmatter conventions globally.
 5. Modify roadmap order or priorities without updating `current-focus.md` with a reason.
+-focus.md` with a reason.

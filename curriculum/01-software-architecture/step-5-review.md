@@ -1,3 +1,14 @@
+---
+type: skill-step
+status: done
+skill: software-architecture
+step: 5
+created: 2026-03-15
+updated: 2026-03-16
+tags:
+  - architecture
+  - review
+---
 [← Step 4](./step-4-system-design.md) · **Step 5** · [Back to README →](./README.md)
 
 # Step 5 — Architecture review & self-critique
@@ -220,7 +231,7 @@ ls architecture/
 
 You designed a system from scratch — requirements → data model → API → deployment → critique. That is real software engineering, not framework usage.
 
-**Apply it immediately:** Pick Prosnokorta or LGM. Write a real `ARCHITECTURE.md` at the root of that repo using everything you produced in this skill. You already have the structure — adapt it to the actual project.
+**Apply it immediately:** Pick Prosnokorta or LGM. Write a real `ARCHITECTURE.md` at the root of that project using everything you produced in this skill. You already have the structure — adapt it to the actual project.
 
 - Next skill: [06 — Testing Fundamentals](../06-testing-fundamentals/README.md)
 - Back to index: [Skills →](../skills/README.md)

@@ -1,3 +1,14 @@
+---
+type: skill-step
+status: done
+skill: software-architecture
+step: 4
+created: 2026-03-15
+updated: 2026-03-16
+tags:
+  - architecture
+  - system-design
+---
 [← Step 3](./step-3-api-design.md) · **Step 4** · [Step 5 →](./step-5-review.md)
 
 # Step 4 — System architecture & deployment

@@ -1,3 +1,14 @@
+---
+type: skill-step
+status: done
+skill: software-architecture
+step: 1
+created: 2026-03-15
+updated: 2026-03-16
+tags:
+  - architecture
+  - requirements
+---
 ← [README](./README.md) · **Step 1** · [Step 2 →](./step-2-data-model.md)
 
 # Step 1 — Requirements analysis

@@ -1,3 +1,14 @@
+---
+type: skill-step
+status: done
+skill: software-architecture
+step: 2
+created: 2026-03-15
+updated: 2026-03-16
+tags:
+  - architecture
+  - data-model
+---
 [← Step 1](./step-1-requirements.md) · **Step 2** · [Step 3 →](./step-3-api-design.md)
 
 # Step 2 — Data model design

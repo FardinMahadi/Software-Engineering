@@ -213,6 +213,13 @@
         "type": "FILES",
         "pattern": "incomplete-tasks.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "DIRECTORIES",
+        "pattern": "curriculum",
+        "patternType": "STRICT"
       }
     ]
   },

@@ -281,7 +281,12 @@
     "instructions": 92,
     "tasks": 93,
     "roadmap": 94,
-    "consumption": 95
+    "consumption": 95,
+    "architecture": 96,
+    "requirements": 97,
+    "data-model": 98,
+    "api-design": 99,
+    "system-design": 100
   },
   "_version": 3
 }

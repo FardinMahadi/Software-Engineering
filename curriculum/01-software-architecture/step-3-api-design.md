@@ -1,3 +1,14 @@
+---
+type: skill-step
+status: done
+skill: software-architecture
+step: 3
+created: 2026-03-15
+updated: 2026-03-16
+tags:
+  - architecture
+  - api-design
+---
 [← Step 2](./step-2-data-model.md) · **Step 3** · [Step 4 →](./step-4-system-design.md)
 
 # Step 3 — API specification
