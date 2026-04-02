@@ -36,12 +36,13 @@ Use this folder as the operational source of truth for learning progress.
 
 | Stage | Focus                       | Status | Next action                                             |
 | ----- | --------------------------- | ------ | ------------------------------------------------------- |
-| 2     | Software architecture       | active | Finish step 1 deliverables and start data model notes   |
-| 3     | Git and GitHub workflows    | active | Lock in branch, PR, and recovery habits                 |
-| 4     | Security and privacy        | active | Run one project audit using a repeatable checklist      |
+| 1     | Coding Basic                | active | Complete all basics of JS.                              |
+| 2     | Software architecture       | queued | Finish step 1 deliverables and start data model notes   |
+| 3     | Git and GitHub workflows    | queued | Lock in branch, PR, and recovery habits                 |
+| 4     | Security and privacy        | queued | Run one project audit using a repeatable checklist      |
 | 5     | Docker and containerization | queued | Prepare after architecture and security notes stabilize |
 | 6     | Agentic engineering         | queued | Use after process and review discipline are stronger    |
-| 7     | Learning operations         | active | Build and maintain this Obsidian-first tracking system  |
+| 7     | Learning operations         | queued | Build and maintain this Obsidian-first tracking system  |
 
 ## Current priorities
 

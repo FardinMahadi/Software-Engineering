@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiFlaskConical",
+      "LiMousePointerSquareDashed",
       "LiBookUp2",
       "LiBookText",
-      "LiHourglass",
-      "LiTimer",
-      "LiBookTemplate"
+      "LiHourglass"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -56,5 +56,7 @@
   "progress": "LiChartBarIncreasing",
   "Templates": "LiBookTemplate",
   "incomplete-tasks.md": "LiHourglass",
-  "curriculum": "LiBookUp2"
+  "curriculum": "LiBookUp2",
+  "skills/07-learning-operations": "LiMousePointerSquareDashed",
+  "skills/08-skills-upgrade": "LiFlaskConical"
 }

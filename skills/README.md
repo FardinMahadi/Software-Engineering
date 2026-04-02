@@ -1,12 +1,4 @@
-# Skills
-
-Interactive learning exercises modeled after [GitHub Skills](https://skills.github.com) — each one is a hands-on course with step-by-step activities, real code to write, and things to commit and PR.
-
-← [Back to repo root](../README.md)
-
----
-
-## What this file is
+# What this file is
 
 This `README.md` is the index for everything under `skills/`.
 
@@ -95,7 +87,7 @@ skills/
 │       │   └── NOTES.md
 │       └── ai-test-review.md
 │
-└── 07-learning-operations/
+├── 07-learning-operations/
     ├── README.md                      ← 5-step course (Obsidian workflow → progress model → reviews → AI guidance → retrospective)
     └── learning/                      ← operating notes and system docs created during the skill
         ├── obsidian-workflow.md
@@ -103,6 +95,15 @@ skills/
         ├── review-rhythm.md
         ├── ai-guidance.md
         └── system-retrospective.md
+
+└── 08-skills-upgrade/
+    ├── README.md.md                   ← 5-step course (audit → targets → implementation → templates → retrospective)
+    └── upgrade/                       ← artifacts created during each upgrade cycle
+        ├── step-1-audit.md
+        ├── step-2-targets.md
+        ├── step-3-implementation-log.md
+        ├── step-4-templates.md
+        └── step-5-retrospective.md
 ```
 
 ### Naming conventions
@@ -131,26 +132,27 @@ There are no auto-graders. You review your own work. The point is to build the h
 
 > Track status and progress in [`progress/skill-tracker.md`](../progress/skill-tracker.md)
 
-| #   | Skill                                                               | Focus                                                                      | Time    |
-| --- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------- |
-| 01  | [Software Architecture](./01-software-architecture/README.md)       | Requirements → data model → API design → system diagram → self-review      | 4–6 hrs |
-| 02  | [Git & GitHub Workflows](./02-git-github/README.md)                 | Branching strategy, conventional commits, rebase, PRs, recovery            | 3–4 hrs |
-| 03  | [Security & Privacy](./03-security-privacy/README.md)               | OWASP Top 10, auth, RBAC, input validation, data protection                | 4–5 hrs |
-| 04  | [Docker & Containerization](./04-docker-containerization/README.md) | Dockerfile, Compose, multi-stage builds, agent sandboxing                  | 4–5 hrs |
-| 05  | [Agentic Engineering](./05-agentic-engineering/README.md)           | Agent-ready projects, prompt templates, multi-agent workflows, code review | 5–6 hrs |
-| 06  | [Testing Fundamentals](./06-testing-fundamentals/README.md)         | Unit tests, API integration tests, Playwright E2E, AI test review          | 4–5 hrs |
-| 07  | [Learning Operations](./07-learning-operations/README.md)           | Obsidian workflow, progress tracking, review cadence, AI guidance          | 3–4 hrs |
+| #   | Skill                                                               | Focus                                                                      |
+| --- | ------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| 01  | [Software Architecture](./01-software-architecture/README.md)       | Requirements → data model → API design → system diagram → self-review      |
+| 02  | [Git & GitHub Workflows](./02-git-github/README.md)                 | Branching strategy, conventional commits, rebase, PRs, recovery            |
+| 03  | [Security & Privacy](./03-security-privacy/README.md)               | OWASP Top 10, auth, RBAC, input validation, data protection                |
+| 04  | [Docker & Containerization](./04-docker-containerization/README.md) | Dockerfile, Compose, multi-stage builds, agent sandboxing                  |
+| 05  | [Agentic Engineering](./05-agentic-engineering/README.md)           | Agent-ready projects, prompt templates, multi-agent workflows, code review |
+| 06  | [Testing Fundamentals](./06-testing-fundamentals/README.md)         | Unit tests, API integration tests, Playwright E2E, AI test review          |
+| 07  | [Learning Operations](./07-learning-operations/README.md)           | Obsidian workflow, progress tracking, review cadence, AI guidance          |
+| 08  | [Skills Upgrade](./08-skills-upgrade/README.md.md)                 | Audit existing skills, improve quality, extract templates, run retros       |
 
 ---
 
 ## Recommended order
 
 ```
-01 Architecture → 06 Testing → 02 Git → 03 Security → 04 Docker → 05 Agentic Engineering
+01 Architecture → 06 Testing → 02 Git → 03 Security → 04 Docker → 05 Agentic Engineering → 08 Skills Upgrade
 ```
 
 Architecture and Testing first because everything else builds on understanding what you're building and how to verify it works. Security before Docker because Docker is partly a security tool. Agentic Engineering last because it requires all the others.
 
 Run [07 Learning Operations](./07-learning-operations/README.md) in parallel with the other skills so progress tracking and AI guidance stay current while you study.
 
-**Total: ~27–35 hours** — about 6 to 8 weeks at a few hours per weekday, or 4 focused weekends with review time.
+Run [08 Skills Upgrade](./08-skills-upgrade/README.md.md) after finishing at least two core skills, then repeat it at the end of each learning cycle.

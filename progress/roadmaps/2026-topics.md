@@ -63,8 +63,6 @@ This roadmap is the curriculum, not the day-to-day tracker.
 
 ## ✅ Stage 1 — Coding basics
 
-`already locked in · timestamp 02:28`
-
 You can read, write, and debug code. You understand how data moves through an application. You're not starting from scratch — you're deepening.
 
 | Topic                   | Status        | What to deepen                                 |
@@ -317,21 +315,12 @@ why you chose this approach over alternatives.
 
 **This week**
 
-- [ ] Write unit + integration tests for Prosnokorta's Spring Boot quiz API
+
 
 **This month**
 
-- [ ] Work through [roadmap.sh/system-design](https://roadmap.sh/system-design) — stage by stage
-- [ ] Run an OWASP Top 10 audit on Prosnokorta and the AI learning platform
-- [ ] Set up the `agent/*` branching convention in all active repos
 
 **Next month**
 
-- [ ] Write a `docker-compose.yml` for Prosnokorta (web + API + MongoDB)
-- [ ] Write `ARCHITECTURE.md` for at least one active project
 
 **Ongoing**
-
-- [ ] Codeforces — minimum 1 problem per session, push toward Div 2 C
-- [ ] Every new feature on any project = agent session + your review
-- [ ] Keep shipping — projects are the real curriculum, not courses

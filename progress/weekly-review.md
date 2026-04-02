@@ -40,10 +40,6 @@ Parent: [[progress/README|Learning Progress Dashboard]]
 
 ## Review checklist
 
-- [ ] Update [[progress/current-focus|Current Focus]].
-- [ ] Update [[progress/skill-tracker|Skill Tracker]].
-- [ ] Add any new tasks to [[progress/learning-backlog|Learning Backlog]].
-- [ ] Archive completed tasks or convert them into notes.
 
 ## Review query
 

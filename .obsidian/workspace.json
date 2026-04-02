@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "09f2f4561fbdab3a",
+        "id": "47e24ae32fbae4be",
         "type": "tabs",
         "children": [
           {
-            "id": "0e2ada30b2427a33",
+            "id": "f54a11e06f23385c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "skills/01-software-architecture/README.md",
+                "file": "skills/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "9ebc53cffc2c8ce4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "skills/08-skills-upgrade/upgrade/step-1-audit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "step-1-audit"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +95,7 @@
       {
         "id": "da4e76f8216dc100",
         "type": "tabs",
-        "dimension": 30.365853658536583,
+        "dimension": 30.36585365853659,
         "children": [
           {
             "id": "981d4ae76a88fb41",
@@ -105,7 +120,7 @@
       {
         "id": "2fd9a64f0deb3159",
         "type": "tabs",
-        "dimension": 67.85714285714286,
+        "dimension": 63.96292004634995,
         "children": [
           {
             "id": "53f920f8060070a2",
@@ -188,7 +203,7 @@
       {
         "id": "2a5073634fabf08a",
         "type": "tabs",
-        "dimension": 32.142857142857146,
+        "dimension": 36.03707995365006,
         "children": [
           {
             "id": "0c7f632e897519ae",
@@ -223,42 +238,42 @@
   },
   "active": "981d4ae76a88fb41",
   "lastOpenFiles": [
-    "curriculum/04-docker-containerization/README.md",
-    "curriculum/04-docker-containerization",
-    "curriculum/01-software-architecture/README.md",
-    "skills/01-software-architecture/README.md",
-    "progress/skill-tracker.md",
+    "JS/resources-list.md",
+    "skills/08-skills-upgrade/upgrade/step-1-audit.md",
+    "skills/01-software-architecture/architecture/data-model.md",
     "progress/README.md",
-    "skills/03-security-privacy/README.md",
-    "curriculum/03-security-privacy/README.md",
-    "skills/06-testing-fundamentals/README.md",
-    "curriculum/03-security-privacy",
-    "skills/02-git-github/README.md",
-    "curriculum/02-git-github/README.md",
-    "curriculum/02-git-github",
-    "curriculum/06-testing-fundamentals/README.md",
+    "skills/08-skills-upgrade/README.md.md",
+    "skills/08-skills-upgrade/upgrade/step-5-retrospective.md",
+    "skills/08-skills-upgrade/upgrade/step-4-templates.md",
+    "skills/08-skills-upgrade/upgrade/step-3-implementation-log.md",
+    "skills/08-skills-upgrade/upgrade/step-2-targets.md",
+    "skills/08-skills-upgrade/upgrade",
+    "skills/README.md",
     "skills/01-software-architecture/architecture/system-design.md",
+    "skills/08-skills-upgrade",
     "skills/01-software-architecture/architecture/review.md",
     "skills/01-software-architecture/architecture/requirements.md",
     "skills/01-software-architecture/architecture/api-spec.md",
-    "curriculum/06-testing-fundamentals",
-    "curriculum/01-software-architecture/step-4-system-design.md",
-    "skills/07-learning-operations/step-5-retrospective.md",
-    "curriculum/01-software-architecture/step-3-api-design.md",
-    "curriculum/01-software-architecture/step-5-review.md",
-    "curriculum/01-software-architecture/step-2-data-model.md",
+    "skills/01-software-architecture/README.md",
+    "README.md",
+    "progress/current-focus.md",
+    "Templates/learning-note-template.md",
+    "incomplete-tasks.md",
+    "progress/learning-backlog.md",
     "curriculum/01-software-architecture/step-1-requirements.md",
-    "skills/01-software-architecture/step-1-requirements.md",
+    "curriculum/06-testing-fundamentals/README.md",
+    "progress/weekly-review.md",
+    "progress/roadmaps/2026-topics.md",
+    "progress/roadmaps/2026-consumption.md",
+    "JS",
+    "curriculum/04-docker-containerization/README.md",
+    "curriculum/04-docker-containerization",
+    "curriculum/03-security-privacy",
+    "curriculum/02-git-github",
+    "curriculum/06-testing-fundamentals",
     "curriculum/01-software-architecture",
     "curriculum",
-    "README.md",
-    "incomplete-tasks.md",
-    "progress/roadmaps/2026-consumption.md",
-    "progress/execution/week-1-prosnokorta-slice/security-checklist-week-1.md",
     "progress/execution/week-1-prosnokorta-slice/ci-workflow-skeleton.yml",
-    "progress/execution/week-1-prosnokorta-slice/openapi.yaml",
-    "progress/execution/week-1-prosnokorta-slice",
-    "progress/execution",
     "Business/Journal/Technical/Migrated/assets/why-not-jwt.png",
     "Business/Journal/Technical/Migrated/assets/original.jpg",
     "Business/Journal/Technical/Migrated/assets/oYukX.jpg",

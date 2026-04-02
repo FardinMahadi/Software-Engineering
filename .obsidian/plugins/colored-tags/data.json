@@ -286,7 +286,17 @@
     "requirements": 97,
     "data-model": 98,
     "api-design": 99,
-    "system-design": 100
+    "system-design": 100,
+    "skills-upgrade": 101,
+    "audit": 102,
+    "quality": 103,
+    "targets": 104,
+    "implementation": 105,
+    "changelog": 106,
+    "templates": 107,
+    "standardization": 108,
+    "improvement": 109,
+    "erd": 110
   },
   "_version": 3
 }

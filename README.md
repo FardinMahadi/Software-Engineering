@@ -10,20 +10,15 @@ Build practical software engineering skills in a structured sequence — from CS
 
 - **Frontend** — React, Next.js 14 (App Router), Tailwind CSS, Framer Motion, shadcn/ui
 - **Backend** — Node.js, Express, Spring Boot
-- **Database** — MongoDB, exploring PostgreSQL
-- **Languages** — JavaScript, TypeScript, C++, Java, Python
-- **AI/LLM** — Hugging Face API, Claude (Sonnet), agentic workflows
-- **Environment** — Omarchy Linux (Arch-based), VS Code, Git
+- **Database** — MongoDB
+- **Languages** — JavaScript, TypeScript, C++
 
 ## Active Projects
 
-| Project                  | Stack                                                             | Status |
-| ------------------------ | ----------------------------------------------------------------- | ------ |
-| **Prosnokorta**          | React Native + Spring Boot API + Web                              | Active |
-| **LGM**                  | AI tool for competitive programming beginners                     | Active |
-| **AI Learning Platform** | Next.js + DB-stored class materials + JSON test responses         | Active |
-| **Client E-commerce**    | Landing page + product listings + WhatsApp redirect + admin panel | Active |
-| **Fardin Mahadi Studio** | Portfolio — Next.js 14, Deep Magenta Signal design system         | Active |
+| Project                  | Stack                                                             | Status    |
+| ------------------------ | ----------------------------------------------------------------- | --------- |
+| **AI Learning Platform** | Next.js + DB-stored class materials + JSON test responses         | Active    |
+| **Client E-commerce**    | Landing page + product listings + WhatsApp redirect + admin panel | Active    |
 
 ## Repository Structure
 
@@ -45,10 +40,10 @@ Structured in stages — from fundamentals toward agentic engineering.
 
 | Stage | Topic                                                            | Status    |
 | ----- | ---------------------------------------------------------------- | --------- |
-| 1     | Programming basics — JS/TS, OOP, APIs, Python, C++               | ✅ Done   |
-| 2     | Software architecture — system design, testing, deployment       | 🟣 Active |
-| 3     | Git and GitHub workflows — branching, rebase, PR strategy        | 🟣 Active |
-| 4     | Security and privacy — auth, OWASP Top 10, data protection       | 🟣 Active |
+| 1     | Programming basics — JS/TS, OOP, APIs, Python, C++               | 🟣 Active |
+| 2     | Software architecture — system design, testing, deployment       | 🟡 Next   |
+| 3     | Git and GitHub workflows — branching, rebase, PR strategy        | 🟡 Next   |
+| 4     | Security and privacy — auth, OWASP Top 10, data protection       | 🟡 Next   |
 | 5     | Containerization — Docker, Docker Compose, isolated environments | 🟡 Next   |
 | 6     | Agentic engineering — multi-agent orchestration, AI-assisted dev | 🟡 Next   |
 
@@ -73,15 +68,4 @@ Full roadmap with resources: [`progress/roadmaps/2026-topics.md`](./progress/roa
 
 ## Immediate Focus
 
-1. Write tests for Prosnokorta's Spring Boot API (testing gap)
-2. Study system design basics — [roadmap.sh/system-design](https://roadmap.sh/system-design)
-3. Audit existing projects against OWASP Top 10
-4. Dockerize the Prosnokorta multi-service setup
-5. Continue Codeforces grind — minimum 1 problem per session
-
-## References
-
-- Roadmap inspired by: [How To Learn To Code In 2026](https://www.youtube.com/watch?v=oshQg1uSRvg) — Tina (ex-Meta)
-- Glasp reading: [glasp.co/reader](https://glasp.co/reader?url=https://www.youtube.com/watch?v=oshQg1uSRvg)
-- [roadmap.sh](https://roadmap.sh) — backend, system design, devops tracks
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+1. Skim over JavaScript advanced topics.

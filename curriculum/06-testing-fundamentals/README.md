@@ -276,11 +276,11 @@ When an AI agent writes code, it often either:
 In `testing/ai-test-review.md`, build your protocol:
 
 1. **Test coverage checklist** — for every function or endpoint the agent builds, verify tests exist for:
-   - [ ] Happy path (normal correct input → correct output)
+ %%    - [ ] Happy path (normal correct input → correct output)
    - [ ] Invalid input (missing fields, wrong types, too long/short)
    - [ ] Auth failure (no token, expired token, wrong role)
    - [ ] Edge cases specific to this feature
-   - [ ] Concurrent usage if relevant
+   - [ ] Concurrent usage if relevant %% 
 
 2. **Useless test detector** — here is a useless test. Explain why it's useless and rewrite it:
 

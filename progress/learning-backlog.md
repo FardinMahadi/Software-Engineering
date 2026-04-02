@@ -16,15 +16,10 @@ Parent: [[progress/README|Learning Progress Dashboard]]
 
 ## Queue
 
-- [ ] Convert one active project architecture into a full system design note.
-- [ ] Add a security review checklist for each active project.
-- [ ] Build a Docker Compose learning exercise around a real multi-service app.
-- [ ] Add one test-writing session focused on a real project, not a toy example.
+- [ ]  [Harvard CS50](https://www.youtube.com/watch?v=8mAITcNt710&list=PLimr0ElOVZG0twt7Vvnnz_edeVJrUD_G6)  – Full Computer Science University Course
 
 ## Deferred
 
-- [ ] Deep dive into PostgreSQL design once the current MongoDB-heavy projects are mapped.
-- [ ] Add agent-session review logs after the Git and review process becomes routine.
 
 ## Intake rules
 

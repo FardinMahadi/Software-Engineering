@@ -39,25 +39,3 @@ Use this note to track what content you actually consumed for the roadmap: video
 | 2026-03-15 | 4     | [PortSwigger Web Security Academy](https://portswigger.net/web-security)                                                       | course       | queued      | Good deeper practice once the core audit workflow exists.                   | Queue after first OWASP pass.                            |
 | 2026-03-15 | 5     | [Docker official docs](https://docs.docker.com)                                                                                | docs         | queued      | Primary reference when moving from concepts to real Compose files.          | Use during Prosnokorta containerization.                 |
 
-## By stage
-
-### Stage 2
-
-- [ ] Add every architecture/system-design resource you actually use.
-- [ ] Record one takeaway per resource.
-
-### Stage 3
-
-- [ ] Track Git branching, PR, and recovery resources once you start consuming them.
-
-### Stage 4
-
-- [ ] Track security references and what changed in your audit checklist after each one.
-
-### Stage 5
-
-- [ ] Track Docker references while building a real Compose setup.
-
-### Stage 6
-
-- [ ] Track prompt-engineering and agent-orchestration references once this stage becomes active.
