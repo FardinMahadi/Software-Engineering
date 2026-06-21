@@ -4,39 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "47e24ae32fbae4be",
+        "id": "0f536c896f02ae26",
         "type": "tabs",
         "children": [
           {
-            "id": "f54a11e06f23385c",
+            "id": "449c1b8fad160bc5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "skills/README.md",
-                "mode": "source",
-                "source": false
+                "file": "DBMS/MySQL/Handbook/MySQL Handbook.pdf"
               },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "9ebc53cffc2c8ce4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "skills/08-skills-upgrade/upgrade/step-1-audit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "step-1-audit"
+              "icon": "lucide-file-text",
+              "title": "MySQL Handbook"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -48,7 +31,7 @@
       {
         "id": "d46aecce6a1078b0",
         "type": "tabs",
-        "dimension": 69.6341463414634,
+        "dimension": 67.42671009771986,
         "children": [
           {
             "id": "42af4f1ef891900d",
@@ -69,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cadence",
+                "query": "tag:#test",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,9 +76,9 @@
         ]
       },
       {
-        "id": "da4e76f8216dc100",
+        "id": "2af4f3c830b17026",
         "type": "tabs",
-        "dimension": 30.36585365853659,
+        "dimension": 32.57328990228013,
         "children": [
           {
             "id": "981d4ae76a88fb41",
@@ -111,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 269.5
   },
   "right": {
     "id": "279416c7625b4660",
@@ -120,7 +103,7 @@
       {
         "id": "2fd9a64f0deb3159",
         "type": "tabs",
-        "dimension": 63.96292004634995,
+        "dimension": 57.5799721835883,
         "children": [
           {
             "id": "53f920f8060070a2",
@@ -142,16 +125,32 @@
             }
           },
           {
+            "id": "4c18205f15a43f5d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AnyMe/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          },
+          {
             "id": "5720a8812050f3b7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AnyMe/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -184,26 +183,44 @@
             }
           },
           {
-            "id": "4c18205f15a43f5d",
+            "id": "87e61d08f4c6c98d",
             "type": "leaf",
             "state": {
-              "type": "outline",
+              "type": "file-properties",
               "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "AnyMe/README.md"
               },
-              "icon": "lucide-list",
-              "title": "Outline"
+              "icon": "lucide-info",
+              "title": "File properties for README"
+            }
+          },
+          {
+            "id": "736373afd563ffe6",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "2451eac80ff65eb9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       },
       {
         "id": "2a5073634fabf08a",
         "type": "tabs",
-        "dimension": 36.03707995365006,
+        "dimension": 42.4200278164117,
         "children": [
           {
             "id": "0c7f632e897519ae",
@@ -219,7 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,59 +250,68 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "981d4ae76a88fb41",
+  "active": "449c1b8fad160bc5",
   "lastOpenFiles": [
-    "JS/resources-list.md",
-    "skills/08-skills-upgrade/upgrade/step-1-audit.md",
-    "skills/01-software-architecture/architecture/data-model.md",
-    "progress/README.md",
-    "skills/08-skills-upgrade/README.md.md",
-    "skills/08-skills-upgrade/upgrade/step-5-retrospective.md",
-    "skills/08-skills-upgrade/upgrade/step-4-templates.md",
-    "skills/08-skills-upgrade/upgrade/step-3-implementation-log.md",
-    "skills/08-skills-upgrade/upgrade/step-2-targets.md",
-    "skills/08-skills-upgrade/upgrade",
-    "skills/README.md",
-    "skills/01-software-architecture/architecture/system-design.md",
-    "skills/08-skills-upgrade",
-    "skills/01-software-architecture/architecture/review.md",
-    "skills/01-software-architecture/architecture/requirements.md",
-    "skills/01-software-architecture/architecture/api-spec.md",
-    "skills/01-software-architecture/README.md",
+    "DBMS/MySQL/W3Schools",
+    "MySQL test.session.sql",
+    "DBMS/MySQL/Scripts/first-sql.script.sql",
+    "DBMS/MySQL/Scripts",
+    "DBMS/MySQL/New folder",
+    "folder-structure.md",
+    "Learning Queue.md",
+    "About me/Pass.md",
     "README.md",
-    "progress/current-focus.md",
-    "Templates/learning-note-template.md",
-    "incomplete-tasks.md",
-    "progress/learning-backlog.md",
-    "curriculum/01-software-architecture/step-1-requirements.md",
-    "curriculum/06-testing-fundamentals/README.md",
-    "progress/weekly-review.md",
-    "progress/roadmaps/2026-topics.md",
-    "progress/roadmaps/2026-consumption.md",
-    "JS",
-    "curriculum/04-docker-containerization/README.md",
-    "curriculum/04-docker-containerization",
-    "curriculum/03-security-privacy",
-    "curriculum/02-git-github",
-    "curriculum/06-testing-fundamentals",
-    "curriculum/01-software-architecture",
-    "curriculum",
-    "progress/execution/week-1-prosnokorta-slice/ci-workflow-skeleton.yml",
-    "Business/Journal/Technical/Migrated/assets/why-not-jwt.png",
-    "Business/Journal/Technical/Migrated/assets/original.jpg",
-    "Business/Journal/Technical/Migrated/assets/oYukX.jpg",
-    "Business/Journal/Technical/Migrated/assets/iqueryable-dbcontext-everywhere.jpg",
-    "Business/Journal/Technical/Migrated/assets/image4.png",
-    "Business/Journal/Technical/Migrated/assets/image3.png",
-    "Business/Journal/Technical/Migrated/assets/image2.png",
-    "Business/Journal/Technical/Migrated/assets/image1.png",
-    "Business/Journal/Technical/Migrated/assets/image.jpeg",
-    "Business/Journal/Technical/Migrated/assets/image 2.png",
-    "Business/Journal/Technical/Migrated/Mind Map.canvas",
-    "Journal/Technical/Migrated/Mind Map.canvas",
-    "Technical/Migrated/Mind Map.canvas"
+    "Study/README.md",
+    "Study/Books/Screenshot 2024-10-10 102325.png",
+    "Study/Books/Book-list.md",
+    "Study/Books/README.md",
+    "AnyMe/README.md",
+    "About me/Claude.md",
+    "About me/ChatGPT.md",
+    "About me/Fragmentation.md",
+    "About me",
+    "node_modules/yt-dlp-wrap/README.md",
+    "AnyMe/Completed.md",
+    "AnyMe/Queue.md",
+    "AnyMe",
+    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/03 - First Order Differential Equations (Part 1).mp4",
+    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/23 - Bessel Equation and It's Solution ｜｜ Differential Equation ｜｜ Artist's Science.mp4",
+    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/23 - Bessel Equation and It's Solution ｜｜ Differential Equation ｜｜ Artist's Science.mp4.part",
+    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/22 - Solution of Wave Equation ｜｜ Differential Equation ｜｜ Artist's Science.mp4",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Preparation Phase/deep-work-session.canvas",
+    "Daily Notes/2026-04-08.md",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Background/deep-work-theory.canvas",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Background/Race Against the Machine.canvas",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Preparation Phase/5 Things Combination.canvas",
+    "Entertainment/AnyMe/Active.md",
+    "Study/Deep Work/Session-end.md",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Background/Flow-state.md",
+    "Pasted image 20260410114953.png",
+    "Assets/Pasted image 20260410115032.png",
+    "Assets/Pasted image 20260409223611.png",
+    "Assets/Pasted image 20260409223417.png",
+    "Assets/Pasted image 20260408143925.png",
+    "Study/Deep Work/Deep Focus- Study and Work Session Protocol/README.md",
+    "Study/Deep Work/README.md",
+    "VAULT-IMPROVEMENT-COMPLETE.md",
+    "NAMING-CONVENTION-COMPLETE.md",
+    "Study/Deep Work/Boundaries.md",
+    "CLEANUP-GUIDE.md",
+    "Study/Deep Work/To-Do.md",
+    "Deep Work/Deep Focus- Study and Work Session Protocol/Preparation Phase/5 Things Combination.canvas",
+    "Achievements/Certificates/ph-21-days-web-development.png",
+    "Deep Work/Deep Focus- Study and Work Session Protocol/Background/Race Against the Machine.canvas",
+    "Books/Deep Work/Deep Focus- Study and Work Session Protocol/Preparation Phase/5 Things Combination.canvas",
+    "Books/Deep Work/Deep Focus- Study and Work Session Protocol/Background/Race Against the Machine.canvas",
+    "Untitled.canvas",
+    "Books/Screenshot 2024-10-10 102325.png",
+    "Achievements/2025/PH-Campus Ambassador/85.jpg",
+    "Untitled-12.jpg",
+    "Business/Journal/Technical/Migrated/Mind Map.canvas"
   ]
 }

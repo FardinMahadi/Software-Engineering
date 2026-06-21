@@ -1,0 +1,2 @@
+-- INSERT INTO users VALUES
+-- ("2026-06-17", DEFAULT, "alice@gmail.com", "Alice", "Male", DEFAULT);

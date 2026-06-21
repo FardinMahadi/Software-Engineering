@@ -43,6 +43,11 @@
     "TQ_show_tags": "checkbox",
     "TQ_show_task_count": "checkbox",
     "TQ_show_tree": "checkbox",
-    "TQ_show_urgency": "checkbox"
+    "TQ_show_urgency": "checkbox",
+    "Book (legacy)": "multitext",
+    "Captured": "date",
+    "Note type": "text",
+    "Page": "number",
+    "Book 1": "multitext"
   }
 }
