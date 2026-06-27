@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senior Engineer Without the Ladder — Build Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0E1A2B;
+    --bg-soft: #122336;
+    --grid-line: #1F3A57;
+    --paper: #E9EEF4;
+    --ink: #D8E2EC;
+    --ink-dim: #7C93AC;
+    --amber: #E8B23D;
+    --amber-dim: #8a6a2c;
+    --green: #5FD3A0;
+    --rule: #2A4763;
+    --radius: 2px;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.55;
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 36px 36px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+
+  .mono{ font-family: 'JetBrains Mono', monospace; }
+  .display{ font-family: 'Space Grotesk', sans-serif; }
+
+  a{ color: var(--amber); text-decoration: none; }
+
+  /* ---------- shared layout ---------- */
+  .wrap{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  .eyebrow{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow .dot{
+    width:6px; height:6px; border-radius:50%;
+    background: var(--green);
+    box-shadow: 0 0 8px var(--green);
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(14,26,43,0.92);
+    backdrop-filter: blur(6px);
+    z-index: 50;
+  }
+  .topbar .wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .topbar .id{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    padding: 88px 0 64px;
+    position: relative;
+  }
+  .hero .tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border:1px solid var(--rule);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing: 0.08em;
+    text-transform:uppercase;
+    color: var(--amber);
+    margin-bottom: 28px;
+  }
+  .hero h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 6vw, 4.1rem);
+    line-height: 1.04;
+    color: var(--paper);
+    letter-spacing: -0.01em;
+    max-width: 13ch;
+  }
+  .hero h1 em{
+    font-style: normal;
+    color: var(--amber);
+  }
+  .hero .lede{
+    margin-top: 26px;
+    max-width: 56ch;
+    font-size: 1.08rem;
+    color: var(--ink);
+  }
+  .hero .lede strong{ color: var(--paper); }
+
+  .measure{
+    margin-top: 40px;
+    display:flex;
+    gap: 0;
+    border-top: 1px dashed var(--rule);
+    border-bottom: 1px dashed var(--rule);
+    flex-wrap: wrap;
+  }
+  .measure div{
+    flex: 1 1 140px;
+    padding: 14px 18px;
+    border-right: 1px dashed var(--rule);
+  }
+  .measure div:last-child{ border-right:none; }
+  .measure .k{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .measure .v{
+    margin-top: 6px;
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1rem;
+    color: var(--paper);
+  }
+
+  /* ---------- section heading ---------- */
+  .section{
+    padding: 64px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .section-head .num{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 12px;
+    color: var(--amber-dim);
+    border:1px solid var(--rule);
+    padding: 3px 8px;
+    border-radius: var(--radius);
+  }
+  .section-head h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1.55rem;
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .section-sub{
+    color: var(--ink-dim);
+    max-width: 62ch;
+    margin-bottom: 36px;
+    font-size: 0.98rem;
+  }
+
+  /* ---------- reframe grid ---------- */
+  .reframe-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .reframe-grid .cell{
+    background: var(--bg-soft);
+    padding: 20px;
+  }
+  .reframe-grid .cell .tag-line{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10.5px;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .reframe-grid .cell p{
+    margin-top: 8px;
+    color: var(--paper);
+    font-size: 0.97rem;
+  }
+
+  /* ---------- principle callout ---------- */
+  .callout{
+    border: 1px solid var(--amber-dim);
+    background: linear-gradient(180deg, rgba(232,178,61,0.07), rgba(232,178,61,0.02));
+    padding: 28px 30px;
+    border-radius: var(--radius);
+    position: relative;
+  }
+  .callout .corner{
+    position:absolute;
+    width: 9px; height: 9px;
+    border: 1px solid var(--amber);
+  }
+  .callout .corner.tl{ top:-1px; left:-1px; border-right:none; border-bottom:none; }
+  .callout .corner.tr{ top:-1px; right:-1px; border-left:none; border-bottom:none; }
+  .callout .corner.bl{ bottom:-1px; left:-1px; border-right:none; border-top:none; }
+  .callout .corner.br{ bottom:-1px; right:-1px; border-left:none; border-top:none; }
+  .callout .eq{
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1.3rem;
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .callout .eq span{ color: var(--ink-dim); font-weight: 400; }
+  .callout p{
+    margin-top: 12px;
+    color: var(--ink);
+    max-width: 60ch;
+  }
+
+  /* ---------- skill stack components ---------- */
+  .stack{
+    display:flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .component{
+    border: 1px solid var(--rule);
+    background: var(--bg-soft);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .component-head{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 14px 18px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .component-head .left{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+  }
+  .component-head .pin{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 11px;
+    color: var(--amber);
+    border: 1px solid var(--amber-dim);
+    padding: 2px 7px;
+    border-radius: 999px;
+    min-width: 38px;
+    text-align:center;
+  }
+  .component-head h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1.02rem;
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .component-head .status{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10.5px;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .component-head .chev{
+    color: var(--ink-dim);
+    transition: transform 0.25s ease;
+    font-size: 13px;
+  }
+  .component.open .chev{ transform: rotate(45deg); }
+  .component-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .component.open .component-body{ max-height: 420px; }
+  .component-body-inner{
+    padding: 0 18px 18px 18px;
+    border-top: 1px dashed var(--rule);
+    padding-top: 14px;
+    margin-top: -1px;
+  }
+  .component-body-inner ul{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .component-body-inner li{
+    font-size: 0.93rem;
+    color: var(--ink);
+    padding-left: 16px;
+    position: relative;
+  }
+  .component-body-inner li::before{
+    content: '';
+    position: absolute;
+    left: 0; top: 8px;
+    width: 6px; height: 1px;
+    background: var(--amber);
+  }
+  .component-body-inner .note{
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+    font-style: italic;
+  }
+
+  /* ---------- roadmap trace ---------- */
+  .trace{
+    position: relative;
+    padding-left: 30px;
+  }
+  .trace::before{
+    content:'';
+    position:absolute;
+    left: 5px; top: 6px; bottom: 6px;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom, var(--rule) 0 6px, transparent 6px 11px);
+  }
+  .phase{
+    position: relative;
+    padding-bottom: 42px;
+  }
+  .phase:last-child{ padding-bottom: 0; }
+  .phase::before{
+    content:'';
+    position:absolute;
+    left: -30px; top: 2px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--amber);
+    box-shadow: 0 0 0 4px var(--bg), 0 0 10px rgba(232,178,61,0.5);
+  }
+  .phase .when{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 11px;
+    color: var(--amber);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .phase h4{
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1.12rem;
+    color: var(--paper);
+    margin-top: 6px;
+    font-weight: 600;
+  }
+  .phase p{
+    margin-top: 8px;
+    color: var(--ink);
+    max-width: 58ch;
+    font-size: 0.95rem;
+  }
+  .phase .feeds{
+    margin-top: 10px;
+    display:flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .phase .feeds span{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10px;
+    color: var(--green);
+    border: 1px solid #2c5443;
+    background: rgba(95,211,160,0.06);
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  /* ---------- title block (signature element) ---------- */
+  .titleblock-wrap{ padding-bottom: 90px; }
+  .titleblock{
+    border: 1px solid var(--rule);
+    background: var(--bg-soft);
+  }
+  .titleblock-top{
+    padding: 26px 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .titleblock-top .stamp{
+    display:inline-block;
+    font-family:'JetBrains Mono',monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--green);
+    border: 1px solid #2c5443;
+    padding: 4px 10px;
+    border-radius: 2px;
+    transform: rotate(-2deg);
+    margin-bottom: 16px;
+  }
+  .titleblock-top h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-size: 1.25rem;
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .titleblock-top p{
+    margin-top: 10px;
+    color: var(--ink);
+    max-width: 62ch;
+    font-size: 0.96rem;
+  }
+  .titleblock-rows{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tb-row{
+    padding: 18px 28px;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .tb-row:nth-child(2n){ border-right:none; }
+  .tb-row .label{
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .tb-row .value{
+    margin-top: 8px;
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+
+  footer{
+    text-align:center;
+    padding: 30px 0 50px;
+    font-family:'JetBrains Mono',monospace;
+    font-size: 10.5px;
+    color: var(--ink-dim);
+    letter-spacing: 0.06em;
+  }
+
+  /* ---------- reveal animation ---------- */
+  .reveal{
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.show{ opacity:1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .component-body{ transition: none; }
+    html{ scroll-behavior: auto; }
+  }
+
+  @media (max-width: 640px){
+    .reframe-grid{ grid-template-columns: 1fr; }
+    .titleblock-rows{ grid-template-columns: 1fr; }
+    .tb-row{ border-right:none; }
+    .measure div{ flex: 1 1 50%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> BUILD PLAN // SENIOR-LEVEL SKILL WITHOUT THE LADDER</div>
+    <div class="id">REV 1.0 — DRAWN FOR: FARDIN MAHADI</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="tag mono">⌁ skill acquisition, not title acquisition</div>
+    <h1>Skip the ladder.<br>Not the <em>reps</em>.</h1>
+    <p class="lede">
+      "Senior" isn't a syntax tier — it's a proxy for <strong>having navigated enough real, high-stakes, ambiguous
+      situations to be trusted with bigger decisions.</strong> You can't fast-forward through a title, but you can
+      manufacture those same situations yourself, faster and more deliberately than a company ever would.
+    </p>
+
+    <div class="measure">
+      <div>
+        <div class="k mono">Current state</div>
+        <div class="v">Full-stack base, no production scars</div>
+      </div>
+      <div>
+        <div class="k mono">Target state</div>
+        <div class="v">Senior judgment, junior title (for now)</div>
+      </div>
+      <div>
+        <div class="k mono">Lever</div>
+        <div class="v">Consequence, not tutorials</div>
+      </div>
+      <div>
+        <div class="k mono">Horizon</div>
+        <div class="v">12 – 18 months</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">01</span>
+      <h2>What "senior" is actually measuring</h2>
+    </div>
+    <p class="section-sub reveal">Not knowledge volume. Six behaviors that get tested under real pressure — every exercise below exists to manufacture practice at one of these.</p>
+
+    <div class="reframe-grid reveal">
+      <div class="cell">
+        <div class="tag-line mono">01 — Ambiguity → system</div>
+        <p>Takes a vague problem and turns it into a working system, alone, without someone else defining the shape first.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">02 — Ownership of trade-offs</div>
+        <p>Makes architecture decisions and lives with the consequences — including the bad ones.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">03 — Legible code</div>
+        <p>Writes systems other people can maintain without the original author in the room.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">04 — Restraint</div>
+        <p>Knows when <em>not</em> to engineer something. Says no to complexity that doesn't earn its keep.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">05 — Composure under fire</div>
+        <p>Can debug a production incident while it's actively costing someone something.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">06 — Translating risk</div>
+        <p>Explains technical risk to people who don't read stack traces, without dumbing it down or hiding it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">02</span>
+      <h2>The variable that actually matters</h2>
+    </div>
+
+    <div class="callout reveal">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <div class="eq">Cycles of consequence <span>&gt;&gt;</span> years of experience</div>
+      <p>
+        Someone who shipped one toy project a month for two years has less senior-skill than someone who owned three
+        production systems end-to-end for eight months. Stop building isolated, disposable projects. Pick one or two
+        systems and <strong style="color:var(--paper)">own them long-term</strong> — keep adding features, fixing the bugs real users
+        report, handling the scale problems, refactoring your own earlier bad calls. That loop — living with your own
+        mistakes — is where seniority actually gets forged. Prosnokorta is a strong candidate to push toward real users
+        instead of staying a portfolio piece.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">03</span>
+      <h2>The skill stack to deliberately build</h2>
+    </div>
+    <p class="section-sub reveal">Six components. Click to expand. Each one maps straight back to one of the six behaviors above.</p>
+
+    <div class="stack reveal">
+
+      <div class="component open">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">01</span><h3>System design &amp; architecture</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 01, 02</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>Study real-world system design, not LeetCode — <em>Designing Data-Intensive Applications</em> (Kleppmann), ByteByteGo, real postmortems from Stripe/Cloudflare engineering blogs.</li>
+              <li>For every project, write an ADR (Architecture Decision Record) <strong style="color:var(--paper)">before</strong> building — forces you to justify trade-offs instead of picking the popular tool.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">02</span><h3>Production ownership</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 02, 05</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>Actually deploy projects to real infra (AWS/GCP/a VPS), put real users on them, wire up basic monitoring (Sentry, UptimeRobot).</li>
+              <li>Get something to fail in production, then fix it live. One real incident teaches more seniority than fifty tutorials.</li>
+            </ul>
+            <div class="note">This is currently your biggest gap — and the highest-leverage one to close first.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">03</span><h3>Code quality at scale</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 03, 04</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>Write tests for risky logic — not 100% coverage theater, meaningful coverage where it actually pays off.</li>
+              <li>Set up CI/CD for every serious project.</li>
+              <li>Go back and refactor something you built 6 months ago — literally what seniors spend half their time doing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">04</span><h3>Reading code, not just writing it</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 01, 03</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>Contribute 2–3 real PRs to existing open-source repos.</li>
+              <li>Forces you to read unfamiliar codebases under review pressure — a core senior skill juniors rarely get exposed to.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">05</span><h3>Mentoring &amp; teaching</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 06</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>You already teach in public — redirect some of that instinct into technical writing (your TinyML/Edge AI roadmap work is a good start).</li>
+              <li>Answer on Stack Overflow/Discord, help juniors at university. Explaining something you half-understand is how you find out you didn't.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component">
+        <div class="component-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="left"><span class="pin mono">06</span><h3>Business &amp; product judgment</h3></div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span class="status mono">→ behavior 06, 02</span>
+            <span class="chev mono">+</span>
+          </div>
+        </div>
+        <div class="component-body">
+          <div class="component-body-inner">
+            <ul>
+              <li>For every feature, write down <em>why</em> it matters to a user or the business — not just how it works.</li>
+              <li>Seniors get trusted with decisions because they've shown they think about impact, not just elegance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">04</span>
+      <h2>Where the stakes come from, with no employer handing them out</h2>
+    </div>
+    <div class="reframe-grid reveal">
+      <div class="cell">
+        <div class="tag-line mono">Freelance / contract</div>
+        <p>Real client, real deadline, real money, no senior dev to bail you out. You already have this lever — your e-commerce client project. Pick slightly-too-hard work on purpose.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">Real users</div>
+        <p>Even a small niche tool. The moment strangers depend on your code, your engineering instincts sharpen fast.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">Competitive programming</div>
+        <p>Sharpens algorithmic thinking, but doesn't build system-design seniority on its own — keep it as a side skill, not the main lever.</p>
+      </div>
+      <div class="cell">
+        <div class="tag-line mono">Unfamiliar integrations</div>
+        <p>Building with a stack you don't already know forces new architecture thinking — your IoT/Edge AI direction fits this perfectly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">05</span>
+      <h2>The sequence</h2>
+    </div>
+    <p class="section-sub reveal">A rough 12–18 month arc, given where you're starting from. Each phase feeds the next — nothing here is parallel busywork.</p>
+
+    <div class="trace reveal">
+
+      <div class="phase">
+        <div class="when">Months 01 – 04</div>
+        <h4>Take one project to real production</h4>
+        <p>Deploy it for real, add monitoring, get actual users, write ADRs for the decisions you already made. This is where the production-ownership gap starts closing.</p>
+        <div class="feeds"><span>feeds → incident experience</span><span>feeds → ADR habit</span></div>
+      </div>
+
+      <div class="phase">
+        <div class="when">Months 03 – 08 (parallel)</div>
+        <h4>Open source + a harder solo client project + public writing</h4>
+        <p>Start contributing real PRs, take on a freelance project that's a stretch, and begin writing technical breakdowns in public.</p>
+        <div class="feeds"><span>feeds → code review reps</span><span>feeds → teaching reflex</span></div>
+      </div>
+
+      <div class="phase">
+        <div class="when">Months 06 – 12</div>
+        <h4>Build a second system, with something unfamiliar in it</h4>
+        <p>Forces fresh architecture thinking instead of repeating patterns you already trust. Your IoT/Edge AI track slots in exactly here.</p>
+        <div class="feeds"><span>feeds → new architecture instincts</span></div>
+      </div>
+
+      <div class="phase">
+        <div class="when">Months 10 – 18</div>
+        <h4>Go back and lead the refactor of your oldest project</h4>
+        <p>Apply everything you've learned to the system you started with. This closing of the loop is what separates "did a bunch of stuff" from "got senior."</p>
+        <div class="feeds"><span>feeds → the whole point</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section titleblock-wrap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="num mono">06</span>
+      <h2>Recommendation — sign-off</h2>
+    </div>
+
+    <div class="titleblock reveal">
+      <div class="titleblock-top">
+        <span class="stamp">✓ APPROVED — WITH ONE CONDITION</span>
+        <h3>This builds the skill. It does not, by itself, get you the title.</h3>
+        <p>
+          Most companies still gate "senior" on a verified track record, not a portfolio — no matter how good it is.
+          What this plan actually does is make you wildly overqualified for junior/mid roles, so you blow through
+          those levels fast once you do take one, and it makes you genuinely dangerous on paths where nobody's
+          checking your title anyway: freelance, startups, co-founding.
+        </p>
+      </div>
+      <div class="titleblock-rows">
+        <div class="tb-row">
+          <div class="label mono">Drawn for</div>
+          <div class="value">Fardin Mahadi — MERN + Spring Boot + RN base, currently building full-stack track</div>
+        </div>
+        <div class="tb-row">
+          <div class="label mono">Primary lever</div>
+          <div class="value">Production ownership — currently the single biggest gap to close</div>
+        </div>
+        <div class="tb-row">
+          <div class="label mono">Secondary benefit</div>
+          <div class="value">Same plan doubles as a strong KAUST / scholarship research profile — deep ownership + public technical writing + real systems is exactly what that track also rewards</div>
+        </div>
+        <div class="tb-row">
+          <div class="label mono">Net result</div>
+          <div class="value">One path, two payoffs — you're not splitting effort between "get a job" and "get into grad school," you're running the same build</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="mono">END OF DRAWING — REV 1.0 — NO FURTHER REVISIONS UNTIL PHASE 01 IS LIVE</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(el => el.classList.add('show'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => io.observe(el));
+  });
+</script>
+
+</body>
+</html>

@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0f536c896f02ae26",
+        "id": "34be5216d4fbca5c",
         "type": "tabs",
         "children": [
           {
-            "id": "449c1b8fad160bc5",
+            "id": "299294487889ae8e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "DBMS/MySQL/Handbook/MySQL Handbook.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MySQL Handbook"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -255,8 +253,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "449c1b8fad160bc5",
+  "active": "299294487889ae8e",
   "lastOpenFiles": [
+    "Algorithm Roadmap — Topics & Codeforces Problem List.md",
+    "senior_engineer_roadmap.html",
+    "DBMS/MySQL/Handbook/MySQL Handbook.pdf",
     "DBMS/MySQL/W3Schools",
     "MySQL test.session.sql",
     "DBMS/MySQL/Scripts/first-sql.script.sql",
@@ -280,9 +281,6 @@
     "AnyMe/Queue.md",
     "AnyMe",
     "Differential Equation(Engineering Mathematics)-Bangla Tutorial/03 - First Order Differential Equations (Part 1).mp4",
-    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/23 - Bessel Equation and It's Solution ｜｜ Differential Equation ｜｜ Artist's Science.mp4",
-    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/23 - Bessel Equation and It's Solution ｜｜ Differential Equation ｜｜ Artist's Science.mp4.part",
-    "Differential Equation(Engineering Mathematics)-Bangla Tutorial/22 - Solution of Wave Equation ｜｜ Differential Equation ｜｜ Artist's Science.mp4",
     "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Preparation Phase/deep-work-session.canvas",
     "Daily Notes/2026-04-08.md",
     "Study/Deep Work/Deep Focus- Study and Work Session Protocol/Background/deep-work-theory.canvas",
